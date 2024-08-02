@@ -11,7 +11,7 @@ class ImpedanceControlDemo:
         self.started = False
 
 
-    def begin(self, gr_data):
+    def begin(self, GP):
         self.started = True
 
         # set some defaults

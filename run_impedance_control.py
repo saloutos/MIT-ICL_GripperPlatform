@@ -15,9 +15,9 @@ init_settings = termios.tcgetattr(sys.stdin)
 # platform
 GP = GripperPlatform(log_path=None)
 
-GP.control_dt = 1.0/100.0
+GP.control_dt = 1.0/300.0
 GP.hand_control_mode = HandControlMode.CURRENT_CONTROL
-GP.bus2_enable = Bus2Enable.ENABLE
+GP.bus2_enable = Bus2Enable.DISABLE
 
 # controller
 from controllers.impedance_control import ImpedanceControlDemo
