@@ -101,7 +101,7 @@ class GripperPlatform:
 
     def shutdown(self):
         # send disable messages to gripper
-        self.CAN_bus_1.send(can.Message(arbitration_id=GRIPPER_ENABLE_ID, dlc=48, data=HAND_MODE_MSGS[HandControlMode.DISABLE_CONTROL], is_fd=True, is_extended_id=False))
+        self.CAN_bus_1.send(can.Message(arbitration_id=GRIPPER_ENABLE_ID, dlc=48, data=HAND_MODE_MSGS[(HandControlMode.DISABLE_CONTROL, self.bus2_enable)], is_fd=True, is_extended_id=False))
         print("CAN bus disabled.")
         # log recorded data
         if self.log_enable:
