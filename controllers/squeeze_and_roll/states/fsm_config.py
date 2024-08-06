@@ -34,7 +34,7 @@ fsm_params.kd_base_squeeze = 0.05
 # rolling params
 fsm_params.tau_ff_left_roll = 0.1
 fsm_params.q_des_right_amp_roll = 0.5
-fsm_params.q_des_right_freq_roll = 2.0
+fsm_params.q_des_right_freq_roll = 0.2
 fsm_params.kp_right_roll = 2.5
 fsm_params.kd_right_roll = 0.05
 
