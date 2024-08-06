@@ -33,7 +33,6 @@ class GripperPlatform:
         self.control_dt = control_dt # 100Hz default
         self.run_control = False
         self.char_in = None
-        self.new_char = False
 
         # general init for logging
         self.log_enable = (log_path is not None)
